@@ -32,6 +32,7 @@ int Node::nthItem(unsigned int i) {
 	unsigned int x = 0;
 	Node * n =this;
 	while (x < i) {
+		x++;
 		if (n->getNext() == NULL)
 			return 0;
 		n =n->getNext();
@@ -43,6 +44,7 @@ Node *Node::nthNext(unsigned int i) {
 	unsigned int x = 0;
 	Node * n = this;
 	while (x < i) {
+		x++;
 		if (n->getNext() == NULL)
 			return NULL;
 		n = n->getNext();
