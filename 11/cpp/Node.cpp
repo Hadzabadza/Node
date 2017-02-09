@@ -47,7 +47,7 @@ Node *Node::nthNext(unsigned int i) {
 			return NULL;
 		n = n->getNext();
 	}
-	return n->getNext();
+	return n;
 }
 
 unsigned int Node::length() {
